@@ -1,0 +1,28 @@
+footer {
+    height: 4vh;
+    background-color: #f59a02;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    align-items: center;
+}
+
+footer p {
+    margin: auto;
+    margin-left: 10px;
+    display: inline;
+}
+
+.git--icon {
+    display: inline;
+    margin-left: 3px;
+}
+
+footer a {
+    color: currentColor
+}
+
+.footer--div {
+    width: 300px;
+    display: flex;
+}
