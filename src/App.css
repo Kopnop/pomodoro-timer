@@ -2,11 +2,142 @@ body {
   margin: 0;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 96vh;
   width: 100vw;
   background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(44, 44, 44) 45%, rgb(44, 44, 44) 55%, rgb(0, 0, 0) 100%);
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.tomato {
+  background-image: url("https://cdn.pixabay.com/photo/2020/03/30/15/56/tomato-4984619_640.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.options-div {
+  width: 400px;
+  height: 100px;
+  margin-top: 80px;
+  display: flex;
+}
+
+.break-div,
+.session-div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:2px solid #006734;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: rgba(0, 103, 52, 0.349);
+  color: white;
+}
+
+.timer-div {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border:2px solid #006734;
+  border-radius: 20px;
+  background-color: rgba(0, 103, 52, 0.349);
+  color: white;
+
+}
+
+.white {
+  color:white;
+}
+
+/* .blinkThreeTimes {
+  animation: borderBlink 1s step-end infinite;
+}
+
+@keyframes borderBlink {
+  50% {
+    border-color: black
+  }
+} */
+
+.time {
+  font-family: 'Orbitron', 'sans-serif';
+  font-size: 1.5rem;
+  display: inline;
+  margin: 0px 10px 0px;
+}
+
+#time-left {
+  font-size: 2rem;
+  margin: 10px;
+  width: 120px;
+  background-color: black;
+  color:white;
+  text-align: center;
+}
+
+.text {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 5px;
+  font-weight: bold;
+}
+
+#timer-label{
+  font-size: 1.6rem;
+  margin: 0px;
+}
+
+.option {
+  margin: 0px 5px 0px;
+}
+
+
+.title {
+  color: #f00001;
+  -webkit-text-stroke: 1px black;
+  font-family: Verdana, sans-serif;
+  padding: 10px;
+  border: 3px solid #006734;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .tomato {
+    width: 90%;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+  .options-div {
+    margin-top:60px
+  }
+  .title {
+    -webkit-text-stroke: #f00001;
+  }
 }
